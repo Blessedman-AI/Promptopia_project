@@ -31,8 +31,6 @@ const Feed = () => {
       setPosts(data);
     };
 
-    console.log(posts)
-
     fetchPosts();
   }, []);
 
@@ -49,7 +47,10 @@ const Feed = () => {
         />
       </form>
 
-      <PromptCardList data={posts} handleTagClick={() => {}} />
+      <PromptCardList
+        data={posts}
+        handleTagClick={() => {}}
+      />
     </section>
   );
 };
